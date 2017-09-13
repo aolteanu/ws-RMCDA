@@ -1,0 +1,167 @@
+<program_description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.decision-deck.org/ws/_downloads/description.xsd">
+	<program provider="rmcda" name="MRSortLPD" displayName="MRSort with large performance differences" version="1.0" />
+	<documentation>
+		<description>MRSort is a simplified ELECTRE TRI sorting method, where alternatives are assigned to an ordered set of categories. In this case, we also take into account large performance differences, both negative (vetoes) and positive (dictators).</description>
+		<contact>Alexandru Olteanu (al.olteanu@imt-atlantique.fr)</contact>
+		<reference>P. MEYER, A-L. OLTEANU, Integrating large positive and negative performance differences into multicriteria majority-rule sorting models, Computers and Operations Research, 81, pp. 216 - 230, 2017.</reference>
+	</documentation>
+	<parameters>
+
+		<input id="inalt" name="alternatives" displayName="alternatives" isoptional="0" >
+			<xmcda tag="alternatives">
+			</xmcda>
+			<documentation>
+				<description>A complete list of alternatives to be considered when inferring the S-RMP model.</description>
+			</documentation>
+		</input>
+		
+		<input id="incrit" name="criteria" displayName="criteria" isoptional="0">
+			<xmcda tag="criteriaScales"></xmcda>
+			<documentation>
+				<description>A list of criteria on which the alternatives are evaluated. For each criterion, the preference direction should be provided.</description>
+            </documentation>
+		</input>
+
+		<input id="incateg" name="categories" displayName="categories" isoptional="0">
+			<xmcda tag="categories"></xmcda>
+			<documentation>
+				<description>A list of categories to which the alternatives will be assigned.</description>
+            </documentation>
+		</input>
+
+		<input id="incategval" name="categoriesRanks" displayName="categoriesRanks" isoptional="0">
+			<xmcda tag="categoriesValues"></xmcda>
+			<documentation>
+				<description>A list of categories ranks, 1 stands for the most preferred category and the higher the number the lower the preference for that category.</description>
+            </documentation>
+		</input>
+		
+		<input id="inperf" name="performanceTable" displayName="performanceTable" isoptional="0">
+			<xmcda tag="performanceTable"></xmcda>
+			<documentation>
+				<description>The evaluations of the alternatives on the set of criteria.</description>
+            </documentation>
+		</input>
+
+		<input id="weights" name="criteriaWeights" displayName="criteriaWeights" isoptional="0">
+			<xmcda tag="criteriaValues"></xmcda>
+			<documentation>
+				<description>The criteria weights.</description>
+            </documentation>
+		</input>
+
+		<input id="majority" name="majorityThreshold" displayName="majorityThreshold" isoptional="0">
+			<xmcda tag="programParameters"></xmcda>
+			<documentation>
+				<description>The majority threshold.</description>
+            </documentation>
+		</input>
+
+		<input id="incatprof" name="categoriesProfiles" displayName="categoriesProfiles" isoptional="0">
+			<xmcda tag="categoriesProfiles"></xmcda>
+			<documentation>
+				<description>The categories delimiting profiles.</description>
+            </documentation>
+		</input>
+
+		<input id="incatprofpt" name="categoriesProfilesPerformanceTable" displayName="categoriesProfilesPerformanceTable" isoptional="0">
+			<xmcda tag="performanceTable"></xmcda>
+			<documentation>
+				<description>The evaluations of the category profiles.</description>
+            </documentation>
+		</input>
+
+		<input id="invetoprof" name="vetoProfiles" displayName="vetoProfiles" isoptional="1">
+			<xmcda tag="categoriesProfiles"></xmcda>
+			<documentation>
+				<description>The categories veto profiles.</description>
+            </documentation>
+		</input>
+
+		<input id="invetoprofpt" name="vetoProfilesPerformanceTable" displayName="vetoProfilesPerformanceTable" isoptional="1">
+			<xmcda tag="performanceTable"></xmcda>
+			<documentation>
+				<description>The evaluations of the veto profiles.</description>
+            </documentation>
+		</input>
+
+		<input id="indictprof" name="dictatorProfiles" displayName="dictatorProfiles" isoptional="1">
+			<xmcda tag="categoriesProfiles"></xmcda>
+			<documentation>
+				<description>The categories dictator profiles.</description>
+            </documentation>
+		</input>
+
+		<input id="indictprofpt" name="vetoProfilesPerformanceTable" displayName="vetoProfilesPerformanceTable" isoptional="1">
+			<xmcda tag="performanceTable"></xmcda>
+			<documentation>
+				<description>The evaluations of the dictator profiles.</description>
+            </documentation>
+		</input>
+
+		<input id="inrule" name="assignmentRule" displayName="assignmentRule" isoptional="0">
+			<xmcda tag="programParameters"></xmcda>
+			<documentation>
+				<description>The type of assignment rule. Can be anything from the list M (majority rule), V (veto), D (dictator), v (veto weakened by dictator), d (dictator weakened by veto), dV (dominating veto and weakened dictator), Dv (dominating dictator and weakened veto) and dv (conflicting veto and dictator).</description>
+            </documentation>
+            <gui status="preferGUI">
+                <entry id="%1" type="enum" displayName="Assignment rule">
+                   <documentation>
+                          <description>Indicates the type of assignment rule to be used.</description>
+                   </documentation>
+                   <items>
+                          <item id="M">
+                                 <description>Majority rule</description>
+                                 <value>M</value>
+                          </item>
+                          <item id="V">
+                                 <description>Veto</description>
+                                 <value>V</value>
+                          </item>
+                          <item id="D">
+                                 <description>Dictator</description>
+                                 <value>D</value>
+                          </item>
+                          <item id="v">
+                                 <description>Veto weakened by dictator</description>
+                                 <value>v</value>
+                          </item>
+                          <item id="d">
+                                 <description>Dictator weakened by veto</description>
+                                 <value>d</value>
+                          </item>
+                          <item id="dV">
+                                 <description>Dominating Veto and weakened Dictator</description>
+                                 <value>dV</value>
+                          </item>
+                          <item id="Dv">
+                                 <description>Dominating Dictator and weakened veto</description>
+                                 <value>Dv</value>
+                          </item>
+                          <item id="dv">
+                                 <description>Conflicting Veto and Dictator</description>
+                                 <value>dv</value>
+                          </item>
+                   </items>
+                   <defaultValue>M</defaultValue>
+                </entry>
+            </gui>
+		</input>
+
+        <output id="outaffect" name="alternativesAssignments" displayName="alternativesAssignments">
+            <xmcda tag="alternativesAssignments"></xmcda>
+             <documentation>
+                    <description>The alternatives assignments to categories.</description>
+             </documentation>
+        </output>
+		
+		<output id="msg" name="messages" displayName="messages">
+			<xmcda tag="methodMessages"></xmcda>
+			<documentation>
+				<description>Messages from the execution of the webservice. Possible errors in the input data will be given here.</description>
+			</documentation>
+		</output>
+
+	</parameters>
+
+</program_description>

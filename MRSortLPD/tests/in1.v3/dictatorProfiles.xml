@@ -1,0 +1,32 @@
+<xmcda:XMCDA xmlns:xmcda='http://www.decision-deck.org/2016/XMCDA-3.0.1' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.decision-deck.org/xmcda/_downloads/XMCDA-3.0.1.xsd'>
+<categoriesProfiles id="indictprof" name="dictatorProfiles">
+	<categoryProfile>
+		<categoryID>Bad</categoryID>
+		<bounding>
+			<upperBound>
+				<alternativeID>dBM</alternativeID>
+			</upperBound>
+		</bounding>
+    </categoryProfile>
+	<categoryProfile>
+		<categoryID>Medium</categoryID>
+		<bounding>
+			<lowerBound>
+				<alternativeID>dBM</alternativeID>
+			</lowerBound>
+			<upperBound>
+				<alternativeID>dMG</alternativeID>
+			</upperBound>
+		</bounding>
+    </categoryProfile>
+	<categoryProfile>
+		<categoryID>Good</categoryID>
+		<bounding>
+			<lowerBound>
+				<alternativeID>dMG</alternativeID>
+			</lowerBound>
+		</bounding>
+    </categoryProfile>
+</categoriesProfiles>
+</xmcda:XMCDA>
+  

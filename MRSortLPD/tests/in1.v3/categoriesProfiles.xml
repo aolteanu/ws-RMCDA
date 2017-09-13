@@ -1,0 +1,32 @@
+<xmcda:XMCDA xmlns:xmcda='http://www.decision-deck.org/2016/XMCDA-3.0.1' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.decision-deck.org/xmcda/_downloads/XMCDA-3.0.1.xsd'>
+<categoriesProfiles id="incatprof" name="categoriesProfiles">
+	<categoryProfile>
+		<categoryID>Bad</categoryID>
+		<bounding>
+			<upperBound>
+				<alternativeID>pBM</alternativeID>
+			</upperBound>
+		</bounding>
+    </categoryProfile>
+	<categoryProfile>
+		<categoryID>Medium</categoryID>
+		<bounding>
+			<lowerBound>
+				<alternativeID>pBM</alternativeID>
+			</lowerBound>
+			<upperBound>
+				<alternativeID>pMG</alternativeID>
+			</upperBound>
+		</bounding>
+    </categoryProfile>
+	<categoryProfile>
+		<categoryID>Good</categoryID>
+		<bounding>
+			<lowerBound>
+				<alternativeID>pMG</alternativeID>
+			</lowerBound>
+		</bounding>
+    </categoryProfile>
+</categoriesProfiles>
+</xmcda:XMCDA>
+  

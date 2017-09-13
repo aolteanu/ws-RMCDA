@@ -1,0 +1,50 @@
+<xmcda:XMCDA xmlns:xmcda='http://www.decision-deck.org/2016/XMCDA-3.0.1' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.decision-deck.org/xmcda/_downloads/XMCDA-3.0.1.xsd'>
+  <alternatives>
+    <alternative id="a01">
+      <active>true</active>
+    </alternative>
+    <alternative id="a02">
+      <active>true</active>
+    </alternative>
+    <alternative id="a03">
+      <active>true</active>
+    </alternative>
+    <alternative id="a04">
+      <active>true</active>
+    </alternative>
+    <alternative id="a05">
+      <active>true</active>
+    </alternative>
+    <alternative id="a06">
+      <active>true</active>
+    </alternative>
+    <alternative id="a07">
+      <active>true</active>
+    </alternative>
+    <alternative id="a08">
+      <active>true</active>
+    </alternative>
+    <alternative id="a09">
+      <active>true</active>
+    </alternative>
+    <alternative id="a10">
+      <active>true</active>
+    </alternative>
+    <alternative id="a11">
+      <active>true</active>
+    </alternative>
+    <alternative id="a12">
+      <active>true</active>
+    </alternative>
+    <alternative id="a13">
+      <active>true</active>
+    </alternative>
+    <alternative id="a14">
+      <active>true</active>
+    </alternative>
+    <alternative id="a15">
+      <active>true</active>
+    </alternative>
+  </alternatives>
+</xmcda:XMCDA>
+

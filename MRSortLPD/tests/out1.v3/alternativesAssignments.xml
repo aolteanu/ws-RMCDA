@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<xmcda:XMCDA xmlns:xmcda="http://www.decision-deck.org/2017/XMCDA-3.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.decision-deck.org/2017/XMCDA-3.0.2 http://www.decision-deck.org/xmcda/_downloads/XMCDA-3.0.2.xsd">
+
+<alternativesAssignments>
+		<alternativeAssignment>
+			<alternativeID>a01</alternativeID>
+			<categoryID>Good</categoryID>
+		</alternativeAssignment>
+		<alternativeAssignment>
+			<alternativeID>a02</alternativeID>
+			<categoryID>Medium</categoryID>
+		</alternativeAssignment>
+		<alternativeAssignment>
+			<alternativeID>a03</alternativeID>
+			<categoryID>Medium</categoryID>
+		</alternativeAssignment>
+		<alternativeAssignment>
+			<alternativeID>a04</alternativeID>
+			<categoryID>Good</categoryID>
+		</alternativeAssignment>
+		<alternativeAssignment>
+			<alternativeID>a05</alternativeID>
+			<categoryID>Medium</categoryID>
+		</alternativeAssignment>
+		<alternativeAssignment>
+			<alternativeID>a06</alternativeID>
+			<categoryID>Medium</categoryID>
+		</alternativeAssignment>
+		<alternativeAssignment>
+			<alternativeID>a07</alternativeID>
+			<categoryID>Bad</categoryID>
+		</alternativeAssignment>
+		<alternativeAssignment>
+			<alternativeID>a08</alternativeID>
+			<categoryID>Bad</categoryID>
+		</alternativeAssignment>
+		<alternativeAssignment>
+			<alternativeID>a09</alternativeID>
+			<categoryID>Bad</categoryID>
+		</alternativeAssignment>
+		<alternativeAssignment>
+			<alternativeID>a10</alternativeID>
+			<categoryID>Good</categoryID>
+		</alternativeAssignment>
+		<alternativeAssignment>
+			<alternativeID>a11</alternativeID>
+			<categoryID>Medium</categoryID>
+		</alternativeAssignment>
+		<alternativeAssignment>
+			<alternativeID>a12</alternativeID>
+			<categoryID>Bad</categoryID>
+		</alternativeAssignment>
+		<alternativeAssignment>
+			<alternativeID>a13</alternativeID>
+			<categoryID>Good</categoryID>
+		</alternativeAssignment>
+		<alternativeAssignment>
+			<alternativeID>a14</alternativeID>
+			<categoryID>Good</categoryID>
+		</alternativeAssignment>
+		<alternativeAssignment>
+			<alternativeID>a15</alternativeID>
+			<categoryID>Medium</categoryID>
+		</alternativeAssignment>
+	</alternativesAssignments>
+</xmcda:XMCDA>

@@ -1,0 +1,1 @@
+MRSort is a simplified ELECTRE TRI sorting method, where alternatives are assigned to an ordered set of categories. In this case, we also take into account large performance differences, both negative (vetoes) and positive (dictators).

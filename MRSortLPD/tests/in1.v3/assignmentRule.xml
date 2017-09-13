@@ -1,0 +1,7 @@
+<xmcda:XMCDA xmlns:xmcda='http://www.decision-deck.org/2016/XMCDA-3.0.1' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.decision-deck.org/xmcda/_downloads/XMCDA-3.0.1.xsd'>
+	<programParameters>
+		<parameter id="inrule">
+			<values><value><label>M</label></value></values>
+		</parameter>
+	</programParameters>
+</xmcda:XMCDA>

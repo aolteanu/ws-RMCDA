@@ -1,0 +1,17 @@
+<xmcda:XMCDA xmlns:xmcda='http://www.decision-deck.org/2017/XMCDA-2.2.2' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.2.xsd'>
+<categoriesValues>
+	<categoryValue>
+		<categoryID>Good</categoryID>
+		<value><integer>1</integer></value>
+    </categoryValue>
+	<categoryValue>
+		<categoryID>Medium</categoryID>
+		<value><integer>2</integer></value>
+    </categoryValue>
+	<categoryValue>
+		<categoryID>Bad</categoryID>
+		<value><integer>3</integer></value>
+    </categoryValue>
+</categoriesValues>
+</xmcda:XMCDA>
+  

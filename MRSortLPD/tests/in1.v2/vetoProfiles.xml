@@ -1,0 +1,28 @@
+<xmcda:XMCDA xmlns:xmcda='http://www.decision-deck.org/2017/XMCDA-2.2.2' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.2.xsd'>
+<categoriesProfiles id="invetoprof" name="vetoProfiles">
+	<categoryProfile>
+        <alternativeID>vBM</alternativeID>
+        <limits>
+            <lowerCategory>
+                <categoryID>Bad</categoryID>
+            </lowerCategory>
+            <upperCategory>
+                <categoryID>Medium</categoryID>
+            </upperCategory>
+        </limits>
+    </categoryProfile>
+
+	<categoryProfile>
+        <alternativeID>vMG</alternativeID>
+        <limits>
+            <lowerCategory>
+                <categoryID>Medium</categoryID>
+            </lowerCategory>
+            <upperCategory>
+                <categoryID>Good</categoryID>
+            </upperCategory>
+        </limits>
+    </categoryProfile>
+</categoriesProfiles>
+</xmcda:XMCDA>
+  
